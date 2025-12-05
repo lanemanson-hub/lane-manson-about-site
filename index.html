@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lane Manson – Leader | Connector | Culture Cultivator</title>
+  <title>Lane Manson - Leader | Connector | Culture Cultivator</title>
   <style>
     * {
       box-sizing: border-box;
@@ -108,12 +108,15 @@
     .hero h1 {
       font-size: clamp(2.4rem, 4vw, 3.1rem);
       line-height: 1.1;
-      margin-bottom: 0.9rem;
+      margin-bottom: 0.4rem;
       color: #020617;
     }
 
-    .hero h1 span {
-      color: #16a34a;
+    .hero-tagline {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #4b5563;
+      margin-bottom: 0.9rem;
     }
 
     .hero-sub {
@@ -215,6 +218,14 @@
       text-transform: uppercase;
       letter-spacing: 0.09em;
       color: #9ca3af;
+    }
+
+    .profile-photo {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      object-fit: cover;
+      max-height: 260px;
     }
 
     section {
@@ -371,10 +382,10 @@
           <span class="hero-tag-dot"></span>
           Leader | Connector | Culture cultivator
         </div>
-        <h1>
-          Leader, connector, <span>results maker</span>
-          obsessed with culture.
-        </h1>
+        <h1>Lane Manson</h1>
+        <p class="hero-tagline">
+          Leader, connector, results maker, culture cultivator.
+        </p>
         <p class="hero-sub">
           I bring teams, data, and strategy together so people thrive and businesses perform. I care about culture,
           clarity, and making it easier to do great work every day.
@@ -396,6 +407,8 @@
 
       <div class="hero-right">
         <div class="card">
+          <!-- Make sure lane-profile.jpg is uploaded to the repo root -->
+          <img src="lane-profile.jpg" alt="Portrait of Lane Manson" class="profile-photo" />
           <h2>How I like to work</h2>
           <p>
             I ask the awkward questions, connect the right people, and turn insight into clear next steps. I care about
@@ -408,8 +421,7 @@
             </li>
             <li>
               <div class="meta-label">Known for</div>
-              Being the culture canary and the unofficial company wifi
-              the one people go to when they need clarity.
+              Being the culture canary and the unofficial company wifi, the one people go to when they need clarity.
             </li>
             <li>
               <div class="meta-label">Now exploring</div>
@@ -429,7 +441,7 @@
       <div class="grid-two">
         <div class="list-block">
           <h3>What drives me</h3>
-          <span>People and performance</span>
+          <span style="color:#111827; font-weight:600;">People and performance</span>
           <ul>
             <li>Creating environments where teams feel supported, trusted, and clear on what good looks like.</li>
             <li>Translating goals into simple plans the frontline can actually use.</li>
@@ -516,10 +528,10 @@
         <div class="contact-cta">
           <!-- Replace the mailto value with your preferred email address -->
           <a href="mailto:"><button class="btn-primary">Email Lane</button></a>
-          <!-- Replace the href with your actual LinkedIn URL -->
-          <a href="https://www.linkedin.com/in/lanemanson" target="_blank" rel="noopener">
-  <button class="btn-outline"><span>View LinkedIn</span></button>
-</a>
+          <!-- LinkedIn profile -->
+          <a href="https://www.linkedin.com/in/lanemanson/" target="_blank" rel="noopener">
+            <button class="btn-outline"><span>View LinkedIn</span></button>
+          </a>
         </div>
       </div>
       <div class="contact-row">

@@ -75,7 +75,7 @@
       padding: 2.5rem 1.5rem 3.5rem;
     }
 
-    /* Hero section - sleek bold executive creative */
+    /* Hero section */
     .hero {
       position: relative;
       display: grid;
@@ -314,6 +314,47 @@
       color: #4b5563;
     }
 
+    /* Logo section */
+    .logo-section {
+      padding-top: 3rem;
+    }
+
+    .logo-section h3 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #6b7280;
+      margin-bottom: 0.7rem;
+    }
+
+    .logo-columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2.5rem;
+      margin-top: 0.8rem;
+    }
+
+    .logo-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.6rem;
+      align-items: center;
+    }
+
+    .logo-strip img {
+      height: 40px;
+      object-fit: contain;
+      filter: grayscale(100%);
+      opacity: 0.8;
+      transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+    }
+
+    .logo-strip img:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+      transform: translateY(-2px);
+    }
+
     .contact {
       margin-top: 2.5rem;
       border-radius: 1.25rem;
@@ -371,6 +412,10 @@
       }
 
       .grid-two {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .logo-columns {
         grid-template-columns: minmax(0, 1fr);
       }
 
@@ -494,6 +539,33 @@
             <li>Curious and challenging when it helps people grow and the work improve.</li>
             <li>Steady under pressure with a sense of humour kept firmly intact.</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logo section -->
+    <section class="logo-section" aria-label="Companies and brands">
+      <div class="logo-columns">
+        <div>
+          <h3>Companies I have worked for</h3>
+          <div class="logo-strip">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/AIA_logo.svg" alt="AIA NZ" />
+            <img src="https://hyper.co.nz/wp-content/uploads/2021/04/hyper-logo-dark.svg" alt="Hyper NZ" />
+            <img src="https://seeklogo.com/images/G/grabone-logo-19C3BE5087-seeklogo.com.png" alt="GrabOne" />
+          </div>
+        </div>
+        <div>
+          <h3>Brands and clients I have worked with</h3>
+          <div class="logo-strip">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Woolworths_NZ_logo.svg" alt="Woolworths NZ" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Foodstuffs_logo.svg" alt="Foodstuffs NZ" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/British_American_Tobacco_logo.svg" alt="BAT" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Liquorland_logo.svg" alt="Liquorland" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/The_Warehouse_Group_logo.svg" alt="The Warehouse Group" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Exxon_Mobil_Logo.svg" alt="Mobil" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Briscoes_logo.svg" alt="Briscoes" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Rebel_Sport_logo.svg" alt="Rebel Sport" />
+          </div>
         </div>
       </div>
     </section>

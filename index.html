@@ -170,10 +170,6 @@
       cursor: pointer;
     }
 
-    .btn-outline span {
-      opacity: 0.9;
-    }
-
     .hero-meta {
       font-size: 0.8rem;
       color: #6b7280;
@@ -200,6 +196,14 @@
       color: #020617;
     }
 
+    .profile-photo {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      object-fit: cover;
+      max-height: 260px;
+    }
+
     .card p {
       font-size: 0.9rem;
       color: #4b5563;
@@ -220,14 +224,6 @@
       color: #9ca3af;
     }
 
-    .profile-photo {
-      width: 100%;
-      border-radius: 1rem;
-      margin-bottom: 1rem;
-      object-fit: cover;
-      max-height: 260px;
-    }
-
     section {
       padding: 2.5rem 0 0;
     }
@@ -238,7 +234,7 @@
       color: #020617;
     }
 
-    section .section-sub {
+    .section-sub {
       font-size: 0.92rem;
       color: #6b7280;
       margin-bottom: 1.5rem;
@@ -325,41 +321,9 @@
       flex-wrap: wrap;
       gap: 0.7rem;
     }
-
-    @media (max-width: 820px) {
-      .hero {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .hero-right {
-        order: -1;
-      }
-
-      .grid-two {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .nav-inner {
-        padding-inline: 1rem;
-      }
-
-      main {
-        padding-inline: 1rem;
-      }
-    }
-
-    @media (max-width: 540px) {
-      .hero-actions {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav ul {
-        display: none;
-      }
-    }
   </style>
 </head>
+
 <body>
   <header>
     <div class="nav-inner">
@@ -382,24 +346,29 @@
           <span class="hero-tag-dot"></span>
           Leader | Connector | Culture cultivator
         </div>
+
         <h1>Lane Manson</h1>
+
         <p class="hero-tagline">
           Leader, connector, results maker, culture cultivator.
         </p>
+
         <p class="hero-sub">
-          I bring teams, data, and strategy together so people thrive and businesses perform. I care about culture,
-          clarity, and making it easier to do great work every day.
+          I bring teams, data, and strategy together so people thrive and businesses perform.
         </p>
+
         <div class="hero-pills">
           <div class="pill">Leadership and coaching</div>
           <div class="pill">Customer and community focus</div>
           <div class="pill">Field and operations experience</div>
           <div class="pill">Data informed decisions</div>
         </div>
+
         <div class="hero-actions">
           <a href="#contact"><button class="btn-primary">Start a conversation</button></a>
           <a href="#experience"><button class="btn-outline"><span>View experience</span></button></a>
         </div>
+
         <p class="hero-meta">
           Based in Tāmaki Makaurau Auckland working across Aotearoa New Zealand.
         </p>
@@ -407,13 +376,13 @@
 
       <div class="hero-right">
         <div class="card">
-          <!-- Make sure lane-profile.jpg is uploaded to the repo root -->
           <img src="lane-profile.jpg" alt="Portrait of Lane Manson" class="profile-photo" />
+
           <h2>How I like to work</h2>
           <p>
-            I ask the awkward questions, connect the right people, and turn insight into clear next steps. I care about
-            the humans as much as the numbers.
+            I ask the awkward questions, connect the right people, and turn insight into clear next steps.
           </p>
+
           <ul class="meta-list">
             <li>
               <div class="meta-label">Strengths</div>
@@ -421,11 +390,11 @@
             </li>
             <li>
               <div class="meta-label">Known for</div>
-              Being the culture canary and the unofficial company wifi, the one people go to when they need clarity.
+              Being the culture canary and the unofficial company wifi.
             </li>
             <li>
               <div class="meta-label">Now exploring</div>
-              Leadership and client focused roles in banking, financial services, and people centric businesses.
+              Leadership and client focused roles in banking and people centric businesses.
             </li>
           </ul>
         </div>
@@ -435,26 +404,27 @@
     <section id="about">
       <h2>About Lane</h2>
       <p class="section-sub">
-        I build strong relationships, lift culture, and turn strategy into action on the ground. I enjoy working where
-        people, process, and performance all intersect.
+        I build strong relationships, lift culture, and turn strategy into action on the ground.
       </p>
+
       <div class="grid-two">
         <div class="list-block">
           <h3>What drives me</h3>
           <span style="color:#111827; font-weight:600;">People and performance</span>
           <ul>
-            <li>Creating environments where teams feel supported, trusted, and clear on what good looks like.</li>
-            <li>Translating goals into simple plans the frontline can actually use.</li>
-            <li>Making decisions grounded in data, but communicated in plain language.</li>
+            <li>Creating environments where teams feel supported and trusted.</li>
+            <li>Translating goals into simple plans the frontline can use.</li>
+            <li>Making decisions grounded in data but understood by everyone.</li>
           </ul>
         </div>
+
         <div class="list-block">
           <h3>How I show up</h3>
           <span>Leadership style</span>
           <ul>
-            <li>Present, visible, and out in the field rather than stuck behind a desk.</li>
-            <li>Curious and challenging when it helps people grow and the work improve.</li>
-            <li>Steady under pressure with a sense of humour kept firmly intact.</li>
+            <li>Visible and present in the field.</li>
+            <li>Curious and constructively challenging.</li>
+            <li>Steady under pressure with humour intact.</li>
           </ul>
         </div>
       </div>
@@ -463,26 +433,27 @@
     <section id="experience">
       <h2>Experience snapshot</h2>
       <p class="section-sub">
-        Recent roles have focused on leading field teams, partnering with major retail brands, and improving the day to
-        day experience for customers and staff.
+        Recent roles have focused on leading field teams, partnering with major brands, and improving delivery.
       </p>
+
       <div class="grid-two">
         <div class="list-block">
           <h3>Leadership and operations</h3>
           <span>Teams and execution</span>
           <ul>
-            <li>Led large distributed teams delivering in high volume, customer facing environments.</li>
-            <li>Owned performance conversations, coaching, and capability building for frontline leaders.</li>
-            <li>Improved execution quality through clearer rhythms, better tools, and sharper feedback loops.</li>
+            <li>Led large distributed teams in fast paced environments.</li>
+            <li>Coached leaders and lifted frontline performance.</li>
+            <li>Improved execution through rhythm, tools, and clarity.</li>
           </ul>
         </div>
+
         <div class="list-block">
           <h3>Partners and stakeholders</h3>
           <span>Relationships that last</span>
           <ul>
-            <li>Worked closely with national retail and channel partners to align priorities and outcomes.</li>
-            <li>Balanced commercial, customer, and operational needs when negotiating trade offs.</li>
-            <li>Became the trusted escalation point who listens first and solves quickly.</li>
+            <li>Worked closely with national retail partners.</li>
+            <li>Balanced commercial, customer, and operational needs.</li>
+            <li>Became the trusted escalation point who solves quickly.</li>
           </ul>
         </div>
       </div>
@@ -491,26 +462,27 @@
     <section id="services">
       <h2>How I add value</h2>
       <p class="section-sub">
-        Whether the title reads regional manager, client services leader, or operations lead my value sits in the mix of
-        leadership, culture, and clear delivery.
+        My value sits in the mix of leadership, culture, and clear delivery.
       </p>
+
       <div class="grid-two">
         <div class="list-block">
           <h3>For your people</h3>
           <span>Culture and clarity</span>
           <ul>
-            <li>Lift engagement by making expectations, priorities, and measures easier to understand.</li>
-            <li>Coach leaders so they are confident, consistent, and visible with their teams.</li>
-            <li>Shape a culture where feedback is normal and wins are actually celebrated.</li>
+            <li>Lift engagement by making expectations clear.</li>
+            <li>Coach leaders toward confidence and consistency.</li>
+            <li>Shape a culture where feedback is normal.</li>
           </ul>
         </div>
+
         <div class="list-block">
           <h3>For your business</h3>
           <span>Performance and delivery</span>
           <ul>
-            <li>Bring together insight from the frontline, customers, and data to guide decisions.</li>
-            <li>Spot execution gaps quickly and close them with practical, low friction changes.</li>
-            <li>Represent your brand well with customers, partners, and community stakeholders.</li>
+            <li>Bring frontline, customer, and data insights together.</li>
+            <li>Spot gaps quickly and close them with low friction changes.</li>
+            <li>Represent your brand well with customers and partners.</li>
           </ul>
         </div>
       </div>
@@ -521,21 +493,23 @@
         <div>
           <h2>Let us talk</h2>
           <p class="section-sub">
-            If you are hiring for a leadership, client, or community focused role and want someone who blends people,
-            performance, and a healthy dose of straight talking curiosity get in touch.
+            If you're hiring for a leadership or customer focused role, let’s talk.
           </p>
         </div>
+
         <div class="contact-cta">
-          <!-- Replace the mailto value with your preferred email address -->
-          <a href="mailto:"><button class="btn-primary">Email Lane</button></a>
-          <!-- LinkedIn profile -->
+          <a href="mailto:">
+            <button class="btn-primary">Email Lane</button>
+          </a>
+
           <a href="https://www.linkedin.com/in/lanemanson/" target="_blank" rel="noopener">
             <button class="btn-outline"><span>View LinkedIn</span></button>
           </a>
         </div>
       </div>
+
       <div class="contact-row">
-        <div class="chip">Available for Auckland based roles and flexible across Aotearoa.</div>
+        <div class="chip">Available for Auckland based roles.</div>
         <div class="chip">Open to contract and permanent opportunities.</div>
       </div>
     </section>
@@ -554,3 +528,4 @@
   </script>
 </body>
 </html>
+lane-profile.jpg

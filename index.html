@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lane Manson | Commercial Excellence | Field Effectiveness | Performance Insights | Cross Functional Delivery</title>
+  <title>Lane Manson | Commercial Operations Leader</title>
   <meta name="description" content="Lane Manson is an Auckland based commercial operations leader with experience across field execution, retail media, adviser channels, stakeholder management, and performance improvement." />
   <style>
     :root {
@@ -345,6 +345,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .logo-card:hover {
+      transform: translateY(-2px);
+      border-color: #b8c4bb;
+      box-shadow: 0 12px 24px rgba(31, 42, 36, 0.08);
+      background: #f8faf8;
     }
 
     .logo-card img {
@@ -355,7 +363,14 @@
       object-position: center;
       display: block;
       filter: grayscale(100%);
-      opacity: 0.92;
+      opacity: 0.9;
+      transition: filter 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+    }
+
+    .logo-card:hover img {
+      filter: grayscale(0%);
+      opacity: 1;
+      transform: scale(1.03);
     }
 
     .logo-card img.logo-bat {
@@ -477,8 +492,8 @@
         <div class="logo-card"><img class="logo-bat" src="images/logo-BAT.png" alt="BAT New Zealand" onerror="this.onerror=null;this.src='images/logo-bat.png';" /></div>
         <div class="logo-card"><img src="images/logo-briscoes.png" alt="Briscoes" /></div>
         <div class="logo-card"><img src="images/logo-foodstuffs.png" alt="Foodstuffs North Island" /></div>
-        <div class="logo-card"><img class="logo-wide" src="images/logo-nw.png" alt="New World" /></div>
-        <div class="logo-card"><img class="logo-tall" src="images/logo-FS.png" alt="Four Square" onerror="this.onerror=null;this.src='imgaes/logo-FS.png';" /></div>
+        <div class="logo-card"><img class="logo-wide" src="images/logo-nw.png" alt="New World" onerror="this.onerror=null;this.src='/mnt/data/images:logo-nw.png';" /></div>
+        <div class="logo-card"><img class="logo-tall" src="images/logo-FS.png" alt="Four Square" onerror="this.onerror=null;this.src='/mnt/data/imgaes:logo-FS.png';" /></div>
         <div class="logo-card"><img src="images/logo-grabone.png" alt="GrabOne" /></div>
         <div class="logo-card"><img src="images/logo-hyper.png" alt="Hyper" /></div>
         <div class="logo-card"><img src="images/logo-liquorland.png" alt="LiquorLand" /></div>

@@ -328,6 +328,50 @@
         padding-top: 3rem;
       }
     }
+  
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      align-items: stretch;
+    }
+
+    .logo-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      min-height: 120px;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow);
+    }
+
+    .logo-card img {
+      width: 100%;
+      max-width: 140px;
+      height: 64px;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .logo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .logo-card {
+        min-height: 100px;
+        padding: 0.8rem;
+      }
+
+      .logo-card img {
+        max-width: 120px;
+        height: 56px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -373,7 +417,7 @@
         </div>
       </div>
       <div class="card portrait">
-        <img src="lane-profile.jpg" alt="Portrait of Lane Manson" />
+        <img src="images/lane-portrait.jpg" alt="Portrait of Lane Manson" />
       </div>
     </div>
   </header>
@@ -416,6 +460,28 @@
         <span class="pill">Trusted relationship management</span>
         <span class="pill">Governance and visibility</span>
         <span class="pill">Distributed team leadership</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>Brands and retail networks</h2>
+        <p>A selection of brands, partners, and retail environments I have worked across.</p>
+      </div>
+      <div class="logo-grid">
+        <div class="logo-card"><img src="images/logo-woolworths.png" alt="Woolworths" /></div>
+        <div class="logo-card"><img src="images/logo-aia.png" alt="AIA" /></div>
+        <div class="logo-card"><img src="images/logo-BAT.png" alt="BAT New Zealand" /></div>
+        <div class="logo-card"><img src="images/logo-briscoes.png" alt="Briscoes" /></div>
+        <div class="logo-card"><img src="images/logo-foodstuffs.png" alt="Foodstuffs North Island" /></div>
+        <div class="logo-card"><img src="images/logo-grabone.png" alt="GrabOne" /></div>
+        <div class="logo-card"><img src="images/logo-hyper.png" alt="Hyper" /></div>
+        <div class="logo-card"><img src="images/logo-liquorland.png" alt="LiquorLand" /></div>
+        <div class="logo-card"><img src="images/logo-mobil.png" alt="Mobil" /></div>
+        <div class="logo-card"><img src="images/logo-rebel.png" alt="Rebel Sport" /></div>
+        <div class="logo-card"><img src="images/logo-twg.png" alt="The Warehouse Group" /></div>
       </div>
     </div>
   </section>
